@@ -7,7 +7,7 @@ TODO
 ## primitives
 TODO
 
-## precursors
+## related
 
 ### PGP: pretty good privacy
 1. OpenPGP ([link](https://www.openpgp.org/)): open source version of PGP
@@ -18,8 +18,8 @@ TODO
 1. Namecoin ([whitepaper](https://www.namecoin.org/resources/whitepaper)): key/value pairs. If key (name) is not unique, transaction is invalid. It's own blockchain.
 2. Stacks ([docs](https://docs.stacks.co/docs/build-apps/references/bns), [white](https://assets.stacks.co/stacks.pdf)): Bitcoin layer
 
-### voting
-1. quadratic voting ([paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531))
+### signalling in hard/soft forks
+1. activation, MASF, UASF ([link](https://bitcoinops.org/en/topics/soft-fork-activation)): Miner activated soft fork (MASF) is governance through block signalling. The more mining power or stake one has, the more blocks one can produce. Pools signal as a group. UASF is governance through full nodes. The rules supported by the "economic majority" of full nodes, is the winning software. 
 
 ### governance
 TODO
@@ -37,5 +37,6 @@ TODO
 ## use cases
 1. less spam and misinformation
 2. accurate ratings and reputations
-3. democratic governance ([vitalik](https://vitalik.ca/general/2017/12/17/voting.html]))
+3. democratic governance ([vitalik](https://vitalik.ca/general/2017/12/17/voting.html]), [quadratic voting](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531))
 4. univeral basic income (UBI)
+5. replacing CAPTCHA with signatures
