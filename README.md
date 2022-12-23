@@ -1,5 +1,5 @@
 # decentralized-identity-resources
-list of decentralized identity resources and projects
+A comprehensive overview of decentralized identity
 
 # Precursors and Related Projects
 
@@ -20,7 +20,7 @@ list of decentralized identity resources and projects
 2. Stacks ([docs](https://docs.stacks.co/docs/build-apps/references/bns), [white](https://assets.stacks.co/stacks.pdf)): Bitcoin layer
 
 ### governance
-TODO
+1. Kleros ([whitepaper](https://kleros.io/whitepaper.pdf): 
 
 ## Mechanisms
 
@@ -34,17 +34,19 @@ TODO
 
 ## Decentralized Identity Projects
 1. Idena ([link](https://docs.idena.io/docs/wp/technology)): proof-of-personhood based on frequent CAPTCHA-like puzzles. Missing or failing identity tests slashes stake and downgrade identity status. Idena has it's own blockchain with POP consensus. There are three downsides. First, repeated validation is needed to maintain identity. Second, individuals fast at solving "flips" can have more than one identity. Lastly, AI will (likely) catch up with human ability to solve flips. 
-2. Kleros
-3. Upala
-4. BrightID
-5. Duniter
-6. Equality Protocol 
-8. Masa ([link](https://www.masa.finance/))
-9. Kudos ([link](https://mintkudos.xyz/)
-10. Proof of Humanity ([paper](https://arxiv.org/ftp/arxiv/papers/2008/2008.05300.pdf))
-11. Sismo ([link](https://docs.sismo.io/sismo-docs/devs-technical-doc/sismo-protocol)
-12. Worldcoin ([link](https://worldcoin.org/introducing-worldcoin)): Uses iris scanning device to generate proof of personhood. Hash of biometric stored for privacy purposes. Relies on trusted hardware.
-13. HumanityDAO ([medium](https://github.com/marbleprotocol/humanity), [github](https://github.com/marbleprotocol/humanity)): Dead project. Verfication though DAO members voting on social media links and bio. Identity rejection forfeits user's stake. Only incentive to vote honestly is maintaining the future growth DAO (Cartel problem).
+2. Upala ([link](https://docs.upala.id/en/latest/whitepaper.html), [github](https://github.com/upala-digital-identity/upala)): users join a pool of members and have a currency value assigned to their identity. This currency can be redeemed by deleting their identity and this depletes the pool's account. This mechanism incentives pools to assign higher values to more trustworthy identities. User's want higher scores for lowest investment. Apps that want identity can require a minimum score to use the app. This solution does not guarantee uniqueness of identity.
+3. BrightID ([whitepaper](https://www.brightid.org/whitepaper)): P2P web of trust. Nodes that are weakly connectly to graph or distantly connected to strong identities are discarded. This solution does not guarantee uniqueness of identity.
+4. duniter ([link](https://duniter.org/blog/duniter-deep-dive-wot/): TODO
+5. Masa ([link](https://www.masa.finance/))
+6. Kudos ([link](https://mintkudos.xyz/): This is not a proof of personhood protocol but it can contribute to building a decentralized identity. Users can get soulbound tokens for achieving stuff. For example, if a user could get a Kudos from a course they completed. 
+7. Proof of Humanity ([paper](https://arxiv.org/ftp/arxiv/papers/2008/2008.05300.pdf)): People make a video of themselves saying they would like to join the registry while holding the text of their address. They must stake ethereum. People whose identities are already verified can vouch for new members by using their stake. People can challenge the identity and or a voucher of an identity. If there is a challenge there is an arbitration court that will resolve the challenge. Kleros courts are used to resolve the challenge.
+8. Sismo ([link](https://docs.sismo.io/sismo-docs/devs-technical-doc/sismo-protocol)
+9. Worldcoin ([link](https://worldcoin.org/introducing-worldcoin)): Uses iris scanning device to generate proof of personhood. Hash of biometric stored for privacy purposes. Relies on trusted hardware.
+10. HumanityDAO ([medium](https://github.com/marbleprotocol/humanity), [github](https://github.com/marbleprotocol/humanity)): Dead project. Verfication though DAO members voting on social media links and bio. Identity rejection forfeits user's stake. Only incentive to vote honestly is maintaining the future growth DAO (Cartel problem).
+11. more projects: [duniter](https://duniter.org/blog/theoretical), 
+
+## Proof-of-personhood consensus (POP)
+TODO
 
 ## Use cases
 1. less spam and misinformation
@@ -52,6 +54,3 @@ TODO
 3. democratic governance ([vitalik](https://vitalik.ca/general/2017/12/17/voting.html]), [quadratic voting](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531))
 4. univeral basic income (UBI)
 5. replacing CAPTCHA with signatures
-
-## Proof-of-personhood consensus (POP)
-TODO
