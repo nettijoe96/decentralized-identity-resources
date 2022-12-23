@@ -38,7 +38,7 @@ A comprehensive overview of decentralized identity projects.
 - [bluesky](https://blueskyweb.org/)
 
 ### governance
-- Decred [docs](https://docs.decred.org/#what-is-decred): governance focused blockchain that uses stake-based voting to decide software changes and budget allocations. Decred's consensus is a hybrid of POW and POS where POW generates a block and POS accepts/declines block. This allows for stakeholders to regulate the behavior of miners.
+- Decred ([docs](https://docs.decred.org/#what-is-decred)): governance focused blockchain that uses stake-based voting to decide software changes and budget allocations. Decred's consensus is a hybrid of POW and POS where POW generates a block and POS accepts/declines block. This allows for stakeholders to regulate the behavior of miners.
 - Kleros ([whitepaper](https://kleros.io/whitepaper.pdf)): a stake-based court system where jurors are selected based on staked pinakion (PNK). Jurors that do not vote with majority have stake reallocated to majority jurors (Schelling game). Reallocation incentivizes jurors to actually participate and not vote randomly. However, it gives even more power to those with greater stake to influence the outcome.
 
 ### CAPTCHA: Completely Automated Public Turing test to tell Computers and Humans Apart
@@ -72,7 +72,7 @@ A comprehensive overview of decentralized identity projects.
 - Microsoft ([sales pitch](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2DjfY))
 
 ## proof-of-personhood consensus (POP)
-A consensus mechanism where each unique identity receieves equal voting power in consensus. When the number of identities is too large to efficiently run consensus, a subset of staking identities are randomly selected. The randomness source could be the previous block hash or VDF result. There is some small mandatory stake for any identity that wants to participate in consensus. With a reasonable group size, [pBFT](https://pmg.csail.mit.edu/papers/osdi99.pdf) or another BFT protocol can be used for efficient consensus. Every cooperating identity recieves a reward and non-cooperating entitites get slashed. In a consensus round, identities must not know who else is participating in consensus--otherwise there is a clear risk for collusion. BLS signature aggregation can be used (like in Casper) to make consensus more efficient. If fact, any secure POS consensus can be used for POP consensus because POP can be modeled as POS where all stakes are equal. POP suffers (like POS) from weak subjectivity, which is when a full node that joins or reconnects to the P2P network needs to ask peers what the correct head is (to avoid long range attacks). Weak subjectivity increases the scope of sybil attacks and also the importance of proper peer seeding. 51% attack in POP is 51% of identities colluding, which is significantly harder to do than in POS provided the identity mechanism is secure. 
+A consensus mechanism where each unique identity receieves equal voting power in consensus. When the number of identities is too large to efficiently run consensus, a subset of staking identities are randomly selected. The randomness source could be the previous block hash or VDF result. There is some small mandatory stake for any identity that wants to participate in consensus. With a reasonable group size, [pBFT](https://pmg.csail.mit.edu/papers/osdi99.pdf) or another BFT protocol can be used for efficient consensus. Every cooperating identity recieves a reward and non-cooperating entitites get slashed. In a consensus round, identities must not know who else is participating in consensus--otherwise there is a clear risk for collusion. BLS signature aggregation can be used (like in Casper) to make consensus more efficient. If fact, any secure POS consensus can be used for POP consensus because POP can be modeled as POS where all stakes are equal. POP suffers (like POS) from weak subjectivity, which is when a full node that joins or reconnects to the P2P network needs to ask peers what the correct head is (to avoid long range attacks). Weak subjectivity increases the scope of sybil attacks and also the importance of proper peer seeding. 51% attack in POP is 51% of identities colluding, which is significantly harder than in POS/POW--provided that the identity mechanism is secure. 
 
 ## use cases
 1. less spam and misinformation
@@ -81,3 +81,14 @@ A consensus mechanism where each unique identity receieves equal voting power in
 4. univeral basic income (UBI)
 5. replacing CAPTCHA with signatures
 6. replacing stake-based applications with identity-based equivalent applications (courts, data oracles, gitcoin, etc)
+
+## further reading
+1. https://bford.info/pub/dec/pop.pdf
+2. https://arxiv.org/abs/1806.07583
+3. https://eprint.iacr.org/2020/934.pdf
+4. https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c
+5. https://vitalik.ca/general/2017/03/14/forks_and_markets.html
+6. https://vitalik.ca/general/2017/12/17/voting.html
+7. https://vitalik.ca/general/2021/05/25/voting2.html
+8. https://vitalik.ca/general/2021/08/16/voting3.html
+9. https://vitalik.ca/general/2018/03/28/plutocracy.html
