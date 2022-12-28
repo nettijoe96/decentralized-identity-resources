@@ -13,7 +13,7 @@ A comprehensive overview of decentralized identity projects.
 - Provides secure websites and eliminates man-in-the-middle attack by using a hierarchy of certificates. Base certificates come preinstalled in OS and browser. 
 
 ### signalling in hard/soft forks
-- activation, MASF, UASF ([link](https://bitcoinops.org/en/topics/soft-fork-activation)): Miner activated soft fork (MASF) is governance through block signalling. The more mining power or stake one has, the more blocks one can produce. Pools signal as a group. User activated soft fork (UASF) is governance through full nodes. The rules supported by the "economic majority" of full nodes is the winning rules. 
+- activation, MASF, UASF ([link](https://bitcoinops.org/en/topics/soft-fork-activation)): Miner activated soft fork (MASF) is governance through block signalling. The more mining power or stake one has, the more blocks one can produce. Pools signal as a group. User activated soft fork (UASF) is governance through full nodes. The consensus rules supported by the "economic majority" of full nodes are the winning rules. 
 
 ### decentralized DNS
 - Namecoin ([whitepaper](https://www.namecoin.org/resources/whitepaper)): key/value pairs. If key (name) is not unique, transaction is invalid.
@@ -53,6 +53,7 @@ A comprehensive overview of decentralized identity projects.
 - Masa ([website](https://www.masa.finance/)): One of the first SBTs launched on Ethereum. Creating a decentralized credit bureau.
 - Kudos ([website](https://mintkudos.xyz/)): This is not a proof of personhood protocol but it can contribute to building a decentralized identity. Users can get soulbound tokens for achieving stuff. For example, a user could recieve a Kudos from a course they completed.
 - Sismo ([docs](https://docs.sismo.io/sismo-docs/devs-technical-doc/sismo-protocol), [video](https://www.youtube.com/watch?v=6vCb6XwGSOk)): smart contracts (attestors) that can create a variety of SBTs using previous ethereum transactions. For example, an SBT showing Alice was active in a DAO.
+- Goldfinch UID ([docs](https://docs.goldfinch.finance/goldfinch/unique-identity-uid) Uses government IDs to verify identity and mints the SBT on OpenSea.
 
 ### web of trust (WOT)
 - BrightID ([whitepaper](https://www.brightid.org/whitepaper)): P2P web of trust. Nodes that are weakly connectly to graph or distantly connected to strong identities are discarded. This solution does not guarantee uniqueness of identity.
